@@ -1,5 +1,25 @@
-div {
+
+div:not(.dashboard-link) {
   max-width: 500px;
   height: 400px;
   margin: 0 auto;
+}
+
+.dashboard-link {
+  font: normal 14px sans-serif;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: lightgrey;
+  border-top: 1px solid black;
+  padding: 10px;
+  a {
+    text-decoration: none;
+    color: black;
+    font-style: italic;
+    &:hover {
+      color: red;
+    }
+  }
 }
