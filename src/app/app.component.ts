@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js';
-// import * as chartData from './data.json';
+import * as chartData from './data.json';
 
 @Component({
   selector: 'my-app',
@@ -20,11 +20,11 @@ export class AppComponent implements OnInit {
       chart: any,
       ctx: any = document.getElementById('areaChart') as HTMLElement;
 
-    // for (let key in chartData.items) {
-    //   if (chartData.items.hasOwnProperty(key)) {
-    //     this.dataArray.push(chartData.items[key]);
-    //   }
-    // }
+    for (let key in chartData.items) {
+      if (chartData.items.hasOwnProperty(key)) {
+        this.dataArray.push(chartData.items[key]);
+      }
+    }
 
     data = {
       labels: ['Apples', 'Oranges', 'Mixed Fruit'],
