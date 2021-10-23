@@ -20,6 +20,10 @@ export class AppComponent implements OnInit {
       chart: any,
       ctx: any = document.getElementById('areaChart') as HTMLElement;
 
+    // Stackblitz no longer supports local json files.
+    // Uncomment below and use import at top.
+    // Replace datasets with this.dataArray
+    
     // for (let key in chartData.items) {
     //   if (chartData.items.hasOwnProperty(key)) {
     //     this.dataArray.push(chartData.items[key]);
