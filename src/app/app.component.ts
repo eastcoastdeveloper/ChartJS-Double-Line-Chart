@@ -52,8 +52,7 @@ export class AppComponent implements OnInit {
                     "radius": 5
                   }
                 ]
-      },
-    };
+      }
 
     options = {
       responsive: true,
