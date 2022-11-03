@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart } from 'chart.js';
-// import * as chartData from './data.json';
 
 @Component({
   selector: 'my-app',
@@ -20,9 +19,11 @@ export class AppComponent implements OnInit {
       chart: any,
       ctx: any = document.getElementById('areaChart') as HTMLElement;
 
-    // Stackblitz no longer supports local json files.
-    // Uncomment below and use import at top.
-    // Replace datasets with this.dataArray
+    // JSON:
+    // Uncomment below and import * as data from 'json-path.json'.
+    // Or Angular 14, create anonymous JSON array and fetch with http
+    // constructor(private _http; HttpClient) {} ...
+    // Replace datasets with dataArray
 
     // for (let key in chartData.items) {
     //   if (chartData.items.hasOwnProperty(key)) {
